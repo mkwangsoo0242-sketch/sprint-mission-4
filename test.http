@@ -1,0 +1,54 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "username": "testuser",
+  "password": "testpassword"
+}
+
+###
+
+POST http://localhost:3000/auth/logout
+
+###
+
+POST http://localhost:3000/auth/refresh
+Content-Type: application/json
+
+
+###
+
+GET http://localhost:3000/posts
+
+### 
+
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "content": "Hello, world!"
+}
+
+###
+
+PUT http://localhost:3000/posts/1
+Content-Type: application/json
+
+{
+  "content": "Hello, world! edit"
+}
+
+###
+
+DELETE http://localhost:3000/posts/1
+
