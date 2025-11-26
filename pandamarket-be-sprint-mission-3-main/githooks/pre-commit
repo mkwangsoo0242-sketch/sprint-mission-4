@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# Pre-commit hook: remove Zone.Identifier files before committing and update staging
-echo "Running pre-commit cleanup: removing Zone.Identifier files..."
-npm run clean:zone --silent || true
-# Add any deletions to the commit so it commits the removal
-git add -A
